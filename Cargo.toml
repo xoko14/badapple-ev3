@@ -1,0 +1,12 @@
+[package]
+name = "badapple-ev3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ev3dev-lang-rust = {version = "0.12.1", features = ["screen"]}
+image = "0.24.5"
+imageproc = "0.23.0"
+
+[profile.release]
+lto = true
